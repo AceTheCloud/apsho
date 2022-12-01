@@ -8,8 +8,21 @@
               <h2>
                 {{ .title }}
               </h2>
-              <p>
+              <!--<div>
                 {{ .description }}
+              </div>-->
+              <p>
+                The data should be evaluated against the seven common cloud migration strategies (7 Rs) for moving applications to the Cloud.<br/>
+                These strategies are
+                <ul>
+                  <li>Refactor</li>
+                  <li>Replatform</li>
+                  <li>Repurchase</li>
+                  <li>Rehost</li>
+                  <li>Relocate</li>
+                  <li>Retain</li>
+                  <li>Retire</li>
+                </ul>
               </p>
             </div>
           </div>
@@ -38,10 +51,10 @@
                 <div
                   id="collapse{{ .dataTarget }}"
                   class="collapse {{ .show }}"
-                  data-parent="#faqAccordion"
-                >
+                  data-parent="#faqAccordion">
                   <div class="body">
-                    {{ .answer }}
+                    {{ .answer }} <br/>
+                    <a href={{ .link }} target="_blank">Learn More</a>
                   </div>
                 </div>
               </div>
