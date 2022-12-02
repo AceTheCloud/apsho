@@ -1,5 +1,6 @@
 {{ define "main" }}
-
+<meta property="og:image" content="{{ .Params.featureImage | absURL }}">
+<meta property="og:image:type" content="image/png">
 <section class="page-header blog-single-header">
   <div class="container">
     <div class="row">
@@ -9,9 +10,6 @@
         </h2>
         <div class="post-meta">
           <ul>
-            <li>
-              <img src="{{ .Params.featureImage | absURL }}" alt="featured-image" style="display:none" />
-            </li>
             <li>
               <img src="{{ .Params.authorThumb | absURL }}" alt="author-thumb" />
             </li>
