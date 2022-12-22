@@ -19,7 +19,6 @@
   <link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
   {{ with site.Params.googleAnalytics }}
   {{ "<!-- Google Analytics -->" | safeHTML }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
   <!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-54XSTRSXS5"></script>
 	<script>
@@ -29,5 +28,5 @@
 
 	  gtag('config', 'G-54XSTRSXS5');
   </script>
-	{{ end }}
+ {{ end }}
 </head>
