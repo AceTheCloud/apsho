@@ -8,6 +8,9 @@
         <h2>
           {{ .Title }}
         </h2>
+        <div>
+          <img src="{{ .Params.featureImage | absURL }}" alt="feature-image" />
+        </div>
         <div class="post-meta">
           <ul>
             <li>
@@ -29,14 +32,12 @@
 </section>
 
 <section class="blog-single">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <article class="blog-single-post">
+  <div class="container"  style="Width:100%">
+      <div style="Width:100%">
+        <article class="blog-single-post" style="padding:30px">
           {{ .Content }}
         </article>
       </div>
-    </div>
   </div>
 </section>
 
