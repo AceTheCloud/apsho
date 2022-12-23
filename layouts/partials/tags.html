@@ -1,0 +1,15 @@
+<div style="scroll-behavior:auto">
+{{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
+<ul>
+    <li class="tag">
+        Topics ⇢
+    </li>
+  {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
+  $taxonomy $tag) -}}
+  <li class="tag">
+    <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+  </li>
+  {{- end -}} {{- end -}}
+</ul>
+{{ end }}
+</div>
