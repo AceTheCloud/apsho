@@ -2,7 +2,7 @@
 {{ $taxonomy := "tags" }} {{ with .Param $taxonomy }}
 <ul>
     <li class="tag">
-        Topics ⇢
+        <b>Topics ⇢ </b>
     </li>
   {{ range $index, $tag := . }} {{ with $.Site.GetPage (printf "/%s/%s"
   $taxonomy $tag) -}}

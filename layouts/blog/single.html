@@ -8,7 +8,7 @@
         <h2>
           {{ .Title }}
         </h2>
-        <div style="padding:20px">
+        <div style="padding:5px">
           <img src="{{ .Params.featureImage | absURL }}" alt="feature-image" />
         </div>
         <div class="post-meta">
@@ -21,19 +21,22 @@
                 {{ .Params.author }}
               </h5>
             </li>
+            <li></li>
             <li>
               {{ .PublishDate.Format "January 2, 2006" }}
             </li>
+            <li></li>
+            <li>
+              {{ partial "readtime.html" .}}
+            </li>
           </ul>
-        </div>
-        <div class="post-meta">
+          <br/>
           {{ partial "tags.html" .}}
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <section class="blog-single">
   <div class="container"  style="Width:100%">
       <div style="Width:100%">
@@ -43,6 +46,4 @@
       </div>
   </div>
 </section>
-
-
 {{ end }}
