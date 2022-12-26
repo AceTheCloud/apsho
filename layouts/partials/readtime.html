@@ -1,2 +1,2 @@
-<b>Read Time</b> : {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+<b>Read Time</b> : {{ $readTime := mul (div (countwords .Content) 220.0) 60 }} <br/>
 {{ math.Floor (div $readTime 60) }} minutes

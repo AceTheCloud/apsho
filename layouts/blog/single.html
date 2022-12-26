@@ -8,21 +8,20 @@
         <h2>
           {{ .Title }}
         </h2>
-        <div style="padding:5px">
-          <img src="{{ .Params.featureImage | absURL }}" alt="feature-image" />
+        <div class="post-meta">
+          <img src="{{ .Params.featureImage | absURL }}" style="margin-left:-30px;width:390px" alt="feature-image" />
         </div>
         <div class="post-meta">
           <ul>
             <li>
               <img src="{{ .Params.authorThumb | absURL }}" alt="author-thumb" />
-            </li>
-            <li>
               <h5>
                 {{ .Params.author }}
               </h5>
             </li>
             <li></li>
             <li>
+              <b>Date Posted</b><br/>
               {{ .PublishDate.Format "January 2, 2006" }}
             </li>
             <li></li>
