@@ -43,6 +43,9 @@
           {{ .Content }}
         </article>
       </div>
+      <div>
+        {{ partial "ads.html" .}}
+      </div>
   </div>
   <div class="container" style="padding:50px">
     {{ template "_internal/disqus.html" . }}
